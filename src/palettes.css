@@ -1,0 +1,324 @@
+:root {
+  font-family:
+    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", ui-sans-serif,
+    system-ui, sans-serif;
+  color: #101827;
+  background: #f4f4ef;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+button,
+a {
+  font: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.palette-page {
+  min-height: 100vh;
+  padding: 28px;
+  background:
+    linear-gradient(90deg, rgba(16, 24, 39, 0.08) 1px, transparent 1px),
+    linear-gradient(rgba(16, 24, 39, 0.08) 1px, transparent 1px),
+    #f4f4ef;
+  background-size: 36px 36px;
+}
+
+.palette-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: 1440px;
+  margin: 0 auto 24px;
+}
+
+.palette-header p,
+.mock-kicker,
+.palette-mood {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.palette-header h1 {
+  margin: 8px 0 0;
+  font-family: "Songti SC", "Noto Serif CJK SC", "SimSun", serif;
+  font-size: clamp(38px, 8vw, 88px);
+  line-height: 0.95;
+  letter-spacing: 0;
+}
+
+.palette-header a {
+  display: inline-flex;
+  flex: 0 0 auto;
+  border: 2px solid #101827;
+  background: #fff;
+  color: #101827;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-weight: 900;
+  box-shadow: 5px 5px 0 #101827;
+}
+
+.palette-intro {
+  max-width: 1440px;
+  margin: 0 auto 28px;
+  border: 2px solid #101827;
+  background: #fff;
+  padding: 18px 20px;
+  box-shadow: 6px 6px 0 #101827;
+}
+
+.palette-intro p {
+  max-width: 860px;
+  margin: 0;
+  color: #344054;
+  line-height: 1.8;
+}
+
+.palette-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.palette-card {
+  color: var(--ink);
+  border: 3px solid var(--shadow);
+  background:
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px),
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    var(--bg);
+  background-size: 34px 34px;
+  padding: 22px;
+  box-shadow: 10px 10px 0 var(--shadow);
+}
+
+.palette-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.palette-meta h2 {
+  margin: 5px 0 0;
+  font-family: "Songti SC", "Noto Serif CJK SC", "SimSun", serif;
+  font-size: clamp(26px, 4vw, 42px);
+  line-height: 1;
+}
+
+.palette-mood {
+  color: var(--primary);
+}
+
+.swatches {
+  display: flex;
+  gap: 6px;
+  align-items: flex-start;
+}
+
+.swatches span {
+  width: 28px;
+  height: 28px;
+  border: 2px solid var(--shadow);
+}
+
+.mock-hero {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 18px;
+  align-items: start;
+}
+
+.mock-copy,
+.mock-side,
+.mock-project {
+  border: 2px solid var(--shadow);
+  background: var(--panel);
+  box-shadow: 6px 6px 0 var(--shadow);
+}
+
+.mock-copy {
+  padding: 20px;
+}
+
+.mock-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.mock-tags span,
+.mock-detail-grid span {
+  border: 2px solid var(--shadow);
+  background: #fff;
+  padding: 6px 9px;
+  font-size: 13px;
+  font-weight: 900;
+  box-shadow: 3px 3px 0 var(--shadow);
+}
+
+.mock-kicker {
+  color: var(--primary);
+}
+
+.mock-copy h3 {
+  margin: 12px 0;
+  font-family: "Songti SC", "Noto Serif CJK SC", "SimSun", serif;
+  font-size: clamp(28px, 4vw, 48px);
+  line-height: 1.04;
+}
+
+.mock-copy p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.mock-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.mock-actions button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 2px solid var(--shadow);
+  padding: 10px 14px;
+  font-weight: 900;
+  cursor: default;
+}
+
+.mock-actions button:first-child {
+  background: var(--primary);
+  color: #fff;
+  box-shadow: 4px 4px 0 var(--accent);
+}
+
+.mock-actions button:last-child {
+  background: #fff;
+  color: var(--ink);
+  box-shadow: 4px 4px 0 var(--accent-2);
+}
+
+.mock-side {
+  padding: 20px;
+  background: var(--ink);
+  color: #fff;
+}
+
+.mock-stat-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--accent-2);
+  font-weight: 900;
+}
+
+.mock-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.mock-stats div {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.mock-stats strong {
+  display: block;
+  color: var(--accent-2);
+  font-size: 30px;
+}
+
+.mock-stats span {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 13px;
+}
+
+.mock-project {
+  margin-top: 18px;
+  padding: 18px;
+}
+
+.mock-project > div:first-child p {
+  margin: 0 0 6px;
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.mock-project h4 {
+  margin: 0 0 16px;
+  font-size: 22px;
+}
+
+.mock-detail-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.mock-result {
+  margin: 0;
+  border: 2px solid var(--shadow);
+  background: var(--result);
+  color: var(--result-text);
+  padding: 13px 14px;
+  font-weight: 800;
+  line-height: 1.6;
+  box-shadow: 4px 4px 0 var(--accent-2);
+}
+
+.palette-note {
+  margin: 18px 0 0;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+@media (max-width: 980px) {
+  .palette-grid,
+  .mock-hero {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .palette-page {
+    padding: 18px;
+  }
+
+  .palette-header {
+    flex-direction: column;
+  }
+
+  .palette-card {
+    padding: 16px;
+    box-shadow: 6px 6px 0 var(--shadow);
+  }
+
+  .palette-meta {
+    flex-direction: column;
+  }
+}
