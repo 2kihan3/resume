@@ -160,14 +160,9 @@ a {
   }
 
   .result-strip {
-    color: #0f172a;
-    background: repeating-linear-gradient(
-      -45deg,
-      #00e5a8,
-      #00e5a8 10px,
-      #b6ff5c 10px,
-      #b6ff5c 20px
-    );
+    color: #f8fafc;
+    background: #111827;
     border: 2px solid #0f172a;
+    box-shadow: 5px 5px 0 #00e5a8;
   }
 }
