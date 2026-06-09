@@ -16,7 +16,7 @@ import {
   Workflow,
 } from 'lucide-react'
 
-const resumePdf = '/高涵-杭州-产品经理.pdf'
+const resumePdf = `${import.meta.env.BASE_URL}高涵-杭州-产品经理.pdf`
 
 const navItems = [
   { href: '#strengths', label: '核心能力' },
