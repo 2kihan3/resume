@@ -190,8 +190,8 @@ const faqs = [
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#f7ff3c] text-slate-950">
-      <header className="sticky top-0 z-50 border-b-2 border-slate-950 bg-[#f7ff3c]/90 backdrop-blur">
+    <div className="min-h-screen bg-[#eaf2ff] text-slate-950">
+      <header className="sticky top-0 z-50 border-b-2 border-slate-950 bg-[#eaf2ff]/90 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
           <a className="flex items-center gap-3" href="#top" aria-label="回到首页">
             <span className="grid h-10 w-10 place-items-center rounded-sm bg-slate-950 text-sm font-semibold text-white">
@@ -223,7 +223,7 @@ function App() {
                   </span>
                 ))}
               </div>
-              <p className="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-teal-700">
+              <p className="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-[#245bff]">
                 AI Product Manager / General Product Manager
               </p>
               <h1 className="headline max-w-4xl text-4xl font-semibold leading-tight text-slate-950 sm:text-5xl lg:text-6xl">
@@ -266,12 +266,12 @@ function App() {
                     <p className="text-sm text-slate-300">当前求职方向</p>
                     <h2 className="mt-2 text-2xl font-semibold">AI 产品 + 通用产品</h2>
                   </div>
-                  <Rocket className="text-teal-300" size={32} />
+                  <Rocket className="text-[#44e0ff]" size={32} />
                 </div>
                 <div className="grid gap-4 sm:grid-cols-2">
                   {metrics.map((metric) => (
                     <div key={metric.label} className="rounded border border-white/10 bg-white/5 p-4">
-                      <p className="text-3xl font-semibold text-teal-200">{metric.value}</p>
+                      <p className="text-3xl font-semibold text-[#44e0ff]">{metric.value}</p>
                       <p className="mt-2 text-sm leading-6 text-slate-300">{metric.label}</p>
                     </div>
                   ))}
@@ -333,7 +333,7 @@ function App() {
                     <p className="mt-3 text-slate-300">{project.subtitle}</p>
                     <p className="mt-6 leading-7 text-slate-200">{project.description}</p>
                     {project.link ? (
-                      <a className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-teal-200" href={project.link} target="_blank" rel="noreferrer">
+                      <a className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[#44e0ff]" href={project.link} target="_blank" rel="noreferrer">
                         {project.linkLabel}
                         <ArrowUpRight size={16} />
                       </a>

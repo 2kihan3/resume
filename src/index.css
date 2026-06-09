@@ -5,7 +5,7 @@
     "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", ui-sans-serif,
     system-ui, sans-serif;
   color: #0f172a;
-  background: #f7ff3c;
+  background: #eaf2ff;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -22,8 +22,8 @@ body {
 }
 
 ::selection {
-  color: #0f172a;
-  background: #ff6b3d;
+  color: #ffffff;
+  background: #245bff;
 }
 
 button,
@@ -46,7 +46,7 @@ a {
   }
 
   .section-kicker {
-    @apply text-sm font-black uppercase tracking-[0.2em] text-[#0057ff];
+    @apply text-sm font-black uppercase tracking-[0.2em] text-[#245bff];
   }
 
   .panel {
@@ -58,7 +58,7 @@ a {
   }
 
   .mini-tag {
-    @apply rounded-sm bg-[#d9f99d] px-3 py-1 text-xs font-bold text-slate-950 ring-1 ring-slate-950/15;
+    @apply rounded-sm bg-[#dbeafe] px-3 py-1 text-xs font-bold text-slate-950 ring-1 ring-slate-950/15;
   }
 
   .mini-card {
@@ -66,7 +66,7 @@ a {
   }
 
   .nav-link {
-    @apply rounded-sm px-3 py-2 text-sm font-black text-slate-800 transition hover:bg-[#ff6b3d] hover:text-slate-950;
+    @apply rounded-sm px-3 py-2 text-sm font-black text-slate-800 transition hover:bg-[#ff5c8a] hover:text-slate-950;
   }
 
   .icon-button {
@@ -74,11 +74,11 @@ a {
   }
 
   .primary-button {
-    @apply inline-flex items-center justify-center gap-2 rounded-sm border-2 border-slate-950 bg-slate-950 px-5 py-3 text-sm font-black text-white shadow-[5px_5px_0_#ff6b3d] transition hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none;
+    @apply inline-flex items-center justify-center gap-2 rounded-sm border-2 border-slate-950 bg-slate-950 px-5 py-3 text-sm font-black text-white shadow-[5px_5px_0_#ff5c8a] transition hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none;
   }
 
   .secondary-button {
-    @apply inline-flex items-center justify-center gap-2 rounded-sm border-2 border-slate-950 bg-white px-5 py-3 text-sm font-black text-slate-950 shadow-[5px_5px_0_#0057ff] transition hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none;
+    @apply inline-flex items-center justify-center gap-2 rounded-sm border-2 border-slate-950 bg-white px-5 py-3 text-sm font-black text-slate-950 shadow-[5px_5px_0_#245bff] transition hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none;
   }
 
   .contact-item {
@@ -86,7 +86,7 @@ a {
   }
 
   .icon-tile {
-    @apply grid h-11 w-11 place-items-center rounded-sm border-2 border-slate-950 bg-[#00e5a8] text-slate-950;
+    @apply grid h-11 w-11 place-items-center rounded-sm border-2 border-slate-950 bg-[#44e0ff] text-slate-950;
   }
 
   .footer-link {
@@ -102,9 +102,9 @@ a {
     background:
       linear-gradient(90deg, rgba(15, 23, 42, 0.12) 2px, transparent 2px),
       linear-gradient(rgba(15, 23, 42, 0.12) 2px, transparent 2px),
-      radial-gradient(circle at 78% 12%, rgba(255, 107, 61, 0.7), transparent 17%),
-      radial-gradient(circle at 12% 18%, rgba(0, 87, 255, 0.24), transparent 22%),
-      linear-gradient(135deg, #f7ff3c 0%, #f7ff3c 42%, #eff6ff 42%, #eff6ff 100%);
+      radial-gradient(circle at 78% 12%, rgba(255, 92, 138, 0.45), transparent 18%),
+      radial-gradient(circle at 12% 18%, rgba(68, 224, 255, 0.5), transparent 22%),
+      linear-gradient(135deg, #eaf2ff 0%, #eaf2ff 48%, #ffffff 48%, #ffffff 100%);
     background-size:
       40px 40px,
       40px 40px,
@@ -123,7 +123,7 @@ a {
     position: absolute;
     inset: 0 auto 0 0;
     width: 6px;
-    background: linear-gradient(#ff6b3d, #f7ff3c, #00e5a8, #0057ff);
+    background: linear-gradient(#245bff, #44e0ff, #ff5c8a);
   }
 
   .dossier-card::after {
@@ -133,7 +133,7 @@ a {
     top: 20px;
     rotate: 8deg;
     border: 2px solid #0f172a;
-    background: #f7ff3c;
+    background: #44e0ff;
     color: #0f172a;
     padding: 6px 18px;
     font-size: 12px;
@@ -143,12 +143,12 @@ a {
 
   .value-card {
     background:
-      linear-gradient(135deg, rgba(0, 229, 168, 0.32), transparent 45%),
+      linear-gradient(135deg, rgba(68, 224, 255, 0.28), transparent 45%),
       #fff;
   }
 
   .detail-card {
-    @apply rounded-sm border-2 border-slate-950 bg-[#f7ff3c] p-4 shadow-[4px_4px_0_#0f172a];
+    @apply rounded-sm border-2 border-slate-950 bg-[#eaf2ff] p-4 shadow-[4px_4px_0_#0f172a];
   }
 
   .detail-card h4 {
@@ -163,6 +163,6 @@ a {
     color: #f8fafc;
     background: #111827;
     border: 2px solid #0f172a;
-    box-shadow: 5px 5px 0 #00e5a8;
+    box-shadow: 5px 5px 0 #44e0ff;
   }
 }
